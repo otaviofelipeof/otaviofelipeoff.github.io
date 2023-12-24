@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Demon Slayer</title> <!--titulo da página-->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--vincula o arquivo de estilo "style2.css" à página HTML. Ele define a aparência visual da página, especificando estilos para os elementos HTML.-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Esse link externo traz as definições de estilo específicas para os ícones de fontes escaláveis que podem ser usados para adicionar ícones estilizados a elementos na página. -->
+        <link href="Imagens/Logo.png" rel="icon"/> <!-- Isso resultará na exibição da imagem "Logo.png" como o ícone da guia do navegador quando a página for carregada.        -->
+        
+    </head>
+    <body>
+        <header>
+            <a class='logo' href='/'>Demon Slayer</a> <!-- Um link de âncora que serve como o logotipo (logo) da página, levando o usuário de volta à página inicial quando clicado.-->
+            <ul>
+                <li><a class='active' href='/'>início</a></li> <!-- usado para destacar visualmente o link ativo, com algum estilo específico em uma folha de estilo (CSS).-->
+                <li><a href="manga.html">Mangá</a></li> <!--ao clicar neste link levará o usuário para a página dedicada ao "Mangá"-->
+                
+            </ul>
+        </header>
+        <section> <!-- Seção de conteúdo da página -->
+            <img src="demon.jpg" id="demon">
+            <img src="montanha.png" id="montanha">
+            <h2 id="text">Kimetsu</h2>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <script>
+              // Seleciona elementos do DOM pelo ID
+              let stars = document.getElementById('demon');
+            let demon = document.getElementById('demon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById(
+                'mountains_front');
+            let header = document.querySelector('header');
+
+            // Adiciona um ouvinte de evento para o evento de rolagem (scroll)
+            window.addEventListener('scroll', function(){
+                // Obtém o valor do deslocamento vertical da janela de rolagem, usado para acionar uma função sempre que a página é rolada.
+                let value = window.scrollY;
+                 // Atualiza as propriedades de estilo com base no valor do deslocamento e cria um efeito de parallax, onde alguns elementos se movem em diferentes velocidades enquanto a página é rolada.
+                demon.style.top = value * 1 + 'px'; //As propriedades de estilo ajustadas incluem top, marginRight, e marginTop, criando um efeito visual interessante à medida que o usuário rola para cima ou para baixo na página.
+                moon.style.top = value * 1.25 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+        <div class="sec" id="sec">
+            <h2>Demon Slayer</h2>
+            <br>
+            <br>
+            <div class="container1">  
+                           <!-- Box a contendo informações sobre a série -->
+                    <div class="box a p"><h3>Informações sobre a série:</h3>Demon Slayer é uma série de anime/mangá criada por Koyoharu Gotouge. A história se passa no Japão Taisho e segue Tanjiro Kamado, um jovem que se torna um caçador de demônios após sua família ser massacrada por demônios, e sua irmã Nezuko ser transformada em um demônio. A premissa básica gira em torno de Tanjiro procurando uma cura para Nezuko e vingança contra os demônios que destruíram sua família.
+                        </div>
+                    <div class="box b"><img src="demon1.jpg"></div>  <!-- Box b contendo uma imagem relacionada à série -->
+            </div>
+            <br>
+            <br>
+                <div class="container2">
+                     <!-- Box a contendo informações sobre as temporadas da série -->
+                    <div class="box a p"><br><h3>Temporadas:</h3> A série conta com 2 temporadas, a primeira foi extremamente bem recebida por sua animação de alta qualidade, trilha sonora envolvente e personagens cativantes. O estúdio Ufotable foi responsável pela animação, e seu trabalho meticuloso foi elogiado por fãs e críticos. A primeira temporada cobre o "Arco da Montanha" do mangá.
+                        </div>
+                        <div class="box b"><img src="demon2.webp"></div> <!-- Box b contendo outra imagem relacionada à série -->
+                        
+        </div>
+        
+        
+        <div class="sec" id="sec">
+            <h2>Trailer</h2>
+            <h4>Clique na imagem abaixo para assitir!</h4>
+            <br>
+            <br>
+            <section class="video video-1 bg-overlay bg-overlay-dark bg-parallax" id="video-2"> <!-- Atribui várias classes à seção para estilização e comportamento específicos. As classes como "video-1", "bg-overlay", "bg-overlay-dark" e "bg-parallax" geralmente indicam estilos visuais, sobreposição escura e efeito de paralaxe, respectivamente.-->
+            
+                <div class="bg-section"><img src="trailer2.jpg" alt="background"></div> <!--Insere uma imagem chamada "trailer2.jpg" como plano de fundo da seção. O atributo alt fornece um texto alternativo para a imagem-->
+                <div class="player"><a class="popup-video" href="https://www.youtube.com/watch?v=YhrA6hjQbTw "> <i class="fas fa-play"></i></a></div> <!--Cria um link âncora que, quando clicado, abrirá um vídeo em um modal ou em uma nova janela. A classe "popup-video" sugere a possibilidade de abrir o vídeo em um pop-up.-->
+              </section></div>
+                    
+                    <!-- img para adicionar imagens -->
+                  </a>
+                  <div class="sec" id="sec">
+                    <h2>Personagens</h2>
+                    <h4>Clique Para Obter Informações!</h4>
+                    <br>
+                    <br>
+                    <div class="container1">  
+                        <!-- Quatro boxes contendo imagens de personagens com links -->
+                            <div class="box box1 a"><a href='tangiro.html'><img src="tangiro.png" >
+                               </a> </div>
+                            <div class="box box1 b"><a href='nezuco.html'><img src="nezuco.webp"></a></div>
+                            <div class="box box1 a"><a href='inosuke.html'><img src="Inosuke.webp"></a>
+                            </div>
+                        <div class="box box1 b"><a href='zenitsu.html'><img src="Zenitsu.webp"></a></div>
+                       
+                    </div>

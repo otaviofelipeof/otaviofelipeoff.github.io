@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"> <!--vincula o arquivo de estilo "style2.css" à página HTML. Ele define a aparência visual da página, especificando estilos para os elementos HTML.-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Esse link externo traz as definições de estilo específicas para os ícones de fontes escaláveis que podem ser usados para adicionar ícones estilizados a elementos na página. -->
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> <!--cria uma caixa com um fundo sutilmente vermelho, com margem inferior, preenchimento ao redor do conteúdo e texto em uma cor que enfatiza uma situação de perigo. Essas classes são parte do sistema de design do Bootstrap, que facilita a estilização e o design responsivo em páginas da web.-->
+        <div class="p-3 mb-2 bg-warning text-dark"> <!-- cria um bloco de divisão (<div>) que tem um preenchimento interno, uma margem inferior, um fundo amarelo de aviso e texto escuro. Essas classes são frequentemente utilizadas com o framework CSS Bootstrap para estilizar componentes em páginas da web de maneira rápida e consistente.-->
+
+    <div class="container"> <!--é um contêiner geral que provavelmente envolve todo o conteúdo da página-->
+        <div class="form-image"> <!--Um contêiner para uma imagem relacionada ao formulário de cadastro. -->
+            <img src="trailer.jpg" alt=""> <!-- A tag de imagem que exibe a imagem referenciada pelo arquivo "trailer.jpg". O atributo alt geralmente é usado para fornecer uma descrição alternativa para a imagem,-->
+        </div>
+        <div class="form"> <!--Um contêiner que agrupa o formulário de cadastro.-->
+            <form action="index.html"> <!--Um formulário HTML com a ação definida como "index.html". Isso indica que, ao enviar o formulário, os dados serão enviados para a página "index.html". O atributo action especifica para onde os dados do formulário devem ser enviados para processamento.-->
+                <div class="form-header"> <!-- Um contêiner para os elementos do cabeçalho do formulário.-->
+                    <div class="title"> <!-- Um contêiner para o título do formulário de cadastro, que contém um elemento de cabeçalho <h1> com o texto "Cadastre-se".-->
+                        <h1>Login</h1>
+                    </div>
+                    <div class="login-button"> <!--Um contêiner para o botão de login-->
+                    </div>
+                </div>
+                    <div class="input-box"> <!--Essa classe pode ser usada para estilizar visualmente o contêiner ou aplicar algum comportamento específico usando CSS ou JavaScript.-->
+                        <label for="email">E-mail</label> <!-- Aqui, há uma tag label associada ao campo de entrada de e-mail. O atributo for está definido como "email", que deve corresponder ao valor do atributo id do campo de entrada relacionado.-->
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required> <!-- Esta é a entrada para o endereço de e-mail. O atributo id é "email", o atributo name é "email", o tipo é "email" (indicando que o navegador deve validar se o valor inserido é um endereço de e-mail válido), o atributo placeholder exibe um texto de dica no campo e o atributo required significa que este campo é obrigatório.-->
+                    </div>
+                    <!--Os comentários feitos em "email", servem para "senha"-->
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                <div class="continue-button"> <!-- Envolve o botão de envio do formulário.-->
+                    <button><a href="#">Entrar</a> </button> <!-- Um link dentro do botão-->
+                </div>
+            </form>
+        </div>
+    </div>
+   <!--Esses códigos referem-se a tags <script> em HTML, que são utilizadas para incorporar scripts (trechos de código JavaScript) em uma página web.-->
+    <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
